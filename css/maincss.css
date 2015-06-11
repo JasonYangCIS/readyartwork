@@ -287,7 +287,7 @@ ul.dropdown-menu a:hover {
 		font-style: thin;
 	}
 	.imgdescription{
-		max-width: 768px;
+		max-width: 600px;
 		text-align:center;
 	}
 	.col-md-4{
@@ -343,7 +343,7 @@ ul.dropdown-menu a:hover {
 		padding-left: 2em;
 	}
 	.imgdescription{
-		max-width: 360px;
+		max-width: 320px;
 		text-align:center;
 
 	}
@@ -408,5 +408,8 @@ ul.dropdown-menu a:hover {
 	}
 	.parent{
 		text-align: center;
+	}
+	.imgdescription{
+		max-width: 240px;
 	}
 }
