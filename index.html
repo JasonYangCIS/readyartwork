@@ -9,6 +9,8 @@
 	<script src="js/bxslider.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
 	<script src="js/jquery.bxslider.min.js"></script>
+	
+	<!-- responsive menu -->
 
 	<!-- begin script for colorbox -->	
 	<script src="js/jquery.colorbox.js"></script>
@@ -53,16 +55,16 @@
 <body>
 	<div class="container-fluid">
 		<div class="container">
-			<div class="row">
+			<div class="row" id="home">
 				<div class="col-md-3 .col-md-pull-9">
 					<!-- quick cut and paste from photoshop for logo-->
 					<img class ="bird-logo" src="image/logo.png">
 				</div>				
 				<!-- begin nav work in progress for active color --> 
 				<div class="col-md-9 .col-md-push-3">
-					<ul class="nav navbar-nav navbar-right">
-		            	<li class="border paddingright"><a href="#">HOME</a></li>
-		              	<li class="border paddingright paddingleft"><a href="#">ABOUT</a></li>
+					<ul class="nav navbar-nav navbar-right navbar-header">
+		            	<li class="border paddingright"><a href="#home">HOME</a> </li>
+		              	<li class="border paddingright paddingleft"><a href="#about">ABOUT</a></li>
 		              	<li class="dropdown border paddingright paddingleft">
 			                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">PRODUCTS</a>
 			                <ul class="dropdown-menu" role="menu">
@@ -76,7 +78,7 @@
 				                  <li class="listborder"><a href="#">bird costumes</a></li>
 			                </ul>
 		              	</li>
-		              	<li class="paddingleft"><a href="#">CONTACT</a></li>
+		              	<li class="paddingleft"><a href="#contact">CONTACT</a></li>
 		            </ul>
 				</div>
 				<!-- end nav -->
@@ -101,7 +103,7 @@
 				</div>
 			</div>
 			<div class="col-md-6">
-				<div class="item-description">
+				<div class="item-description" id="about">				
 					<h1>watch a chick hatch</h1>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
 				</div>
@@ -111,7 +113,7 @@
 
 	<div class="row">
 		<div class="col-md-4 col-md-offset-1">
-			<img class="left-padding" src="image/birdwatch.png">
+			<img class="left-padding imgdescription" src="image/birdwatch.png">
 			<div class="pic-description">
 				<h1>bird watching tips</h1>
 				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
@@ -120,7 +122,7 @@
 		</div>
 
 		<div class="col-md-4 col-md-offset-1">
-			<img src="image/fascinatingfacts.png">
+			<img class="imgdescription" src="image/fascinatingfacts.png">
 			<div class="pic-description">
 				<h1>fascinating facts</h1>
 				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
@@ -133,47 +135,46 @@
 	<div class="bird-container">
 		<h1 class="bird-header">BIRDS OF THE MONTH</h1>
 		<div class="row">
-			<div class="col-md-3 paddingtop"><p><a class="group2" href="image/bird1.png"><img src="image/bird1.png"></a></p></div>
-			<div class="col-md-3 paddingtop"><p><a class="group2" href="image/bird2.png"><img src="image/bird2.png"></a></p></div>
-			<div class="col-md-3 paddingtop"><p><a class="group2" href="image/bird3.png"><img src="image/bird3.png"></a></p></div>
-			<div class="col-md-3 paddingtop"><p><a class="group2" href="image/bird4.png"><img src="image/bird4.png"></a></p></div>
-			<div class="col-md-3 paddingtop"><p><a class="group2" href="image/bird5.png"><img src="image/bird5.png"></a></p></div>
-			<div class="col-md-3 paddingtop"><p><a class="group2" href="image/bird1.png"><img src="image/bird1.png"></a></p></div>
-			<div class="col-md-3 paddingtop"><p><a class="group2" href="image/bird2.png"><img src="image/bird2.png"></a></p></div>
-			<div class="col-md-3 paddingtop"><p><a class="group2" href="image/bird1.png"><img src="image/bird1.png"></a></p></div>
-			<div class="col-md-3 paddingtop"><p><a class="group2" href="image/bird4.png"><img src="image/bird4.png"></a></p></div>
-			<div class="col-md-3 paddingtop"><p><a class="group2" href="image/bird3.png"><img src="image/bird3.png"></a></p></div>	
-			<div class="col-md-3 paddingtop"><p><a class="group2" href="image/bird2.png"><img src="image/bird2.png"></a></p></div>	
-			<div class="col-md-3 paddingtop"><p><a class="group2" href="image/bird1.png"><img src="image/bird1.png"></a></p></div>	
+			<div class="col-md-3 col-xs-6 paddingtop"><p><a class="group2" href="image/bird1.png"><img src="image/bird1.png" class="birdimg"></a></p></div>
+			<div class="col-md-3 col-xs-6 paddingtop"><p><a class="group2" href="image/bird2.png"><img src="image/bird2.png" class="birdimg"></a></p></div>
+			<div class="col-md-3 col-xs-6 paddingtop"><p><a class="group2" href="image/bird3.png"><img src="image/bird3.png" class="birdimg"></a></p></div>
+			<div class="col-md-3 col-xs-6 paddingtop"><p><a class="group2" href="image/bird4.png"><img src="image/bird4.png" class="birdimg"></a></p></div>
+			<div class="col-md-3 col-xs-6 paddingtop"><p><a class="group2" href="image/bird5.png"><img src="image/bird5.png" class="birdimg"></a></p></div>
+			<div class="col-md-3 col-xs-6 paddingtop"><p><a class="group2" href="image/bird1.png"><img src="image/bird1.png" class="birdimg"></a></p></div>
+			<div class="col-md-3 col-xs-6 paddingtop"><p><a class="group2" href="image/bird2.png"><img src="image/bird2.png" class="birdimg"></a></p></div>
+			<div class="col-md-3 col-xs-6 paddingtop"><p><a class="group2" href="image/bird1.png"><img src="image/bird1.png" class="birdimg"></a></p></div>
+			<div class="col-md-3 col-xs-6 paddingtop"><p><a class="group2" href="image/bird4.png"><img src="image/bird4.png" class="birdimg"></a></p></div>
+			<div class="col-md-3 col-xs-6 paddingtop"><p><a class="group2" href="image/bird3.png"><img src="image/bird3.png" class="birdimg"></a></p></div>	
+			<div class="col-md-3 col-xs-6 paddingtop"><p><a class="group2" href="image/bird2.png"><img src="image/bird2.png" class="birdimg"></a></p></div>	
+			<div class="col-md-3 col-xs-6 paddingtop"><p><a class="group2" href="image/bird1.png"><img src="image/bird1.png" class="birdimg"></a></p></div>	
 		</div>
-	</div>
+	</div>	
+</body>
 
-	<!-- footer -->
-	<div class="bird-footer">
+<footer>
+	<div class="bird-footer" id="contact">
 		<div class="row row-left">
 			<div class="col-md-6">										
-				<ul class="nav navbar-nav navbar-custom">
-	            	<li class="footerborder paddingleft paddingright"><a href="#">HOME</a></li>
-	              	<li class="footerborder paddingleft paddingright"><a href="#">ABOUT</a></li>
-	              	<li class="footerborder paddingleft paddingright"><a href="#">PRODUCTS</a></li>
-	              	<li><a href="#">CONTACT</a></li>
+				<ul class="nav navbar-nav navbar-custom ">
+	            	<li class="footerborder paddingleft paddingright"><a href="#home">HOME</a></li>
+	              	<li class="footerborder paddingleft paddingright"><a href="#about">ABOUT</a></li>
+	              	<li class="footerborder paddingleft paddingright"><a href="#home">PRODUCTS</a></li>
+	              	<li><a href="#contact">CONTACT</a></li>
 	            </ul>
-
-				<img class ="bird-logo-footer" src="image/logo.png">
-
-				<p class="copyright">
-					Copyright &reg; Birds Inc. All Rights Reserved. Website by <a href="www.jasonyangdev.com">Jason Yang</a>
-				</p>
+	            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.9311965879183!2d-118.10856100000004!3d34.09690300000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2dad46e4d48a1%3A0x4a75133cd91167e6!2sReady+Artwork!5e0!3m2!1sen!2sus!4v1433996409775" class="googlemapshack" width="550" height="280" frameborder="0" style="border:0"></iframe>
+	            <div class="copyright">
+					<img class ="bird-logo-footer" src="image/logo.png">
+					<p>Copyright &reg; Birds Inc. All Rights Reserved. Website by <a href="http://www.jasonyangdev.com">Jason Yang</a></p>
+				</div>				
 			</div>
+
 			<div class="col-md-6">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.9311965879183!2d-118.10856100000004!3d34.09690300000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2dad46e4d48a1%3A0x4a75133cd91167e6!2sReady+Artwork!5e0!3m2!1sen!2sus!4v1433996409775" width="550" height="280" frameborder="0" style="border:0"></iframe>
-			</div>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.9311965879183!2d-118.10856100000004!3d34.09690300000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2dad46e4d48a1%3A0x4a75133cd91167e6!2sReady+Artwork!5e0!3m2!1sen!2sus!4v1433996409775" class="googlemaps" width="550" height="280" frameborder="0" style="border:0"></iframe>
+			</div>		
 		</div>
-	</div>
+	</div>	
+</footer>
 
-	<!-- end footer -->
-	
-</body>
 <script>
 // jquery widget for slider
 $('.bxslider').bxSlider({
@@ -183,7 +184,24 @@ $('.bxslider').bxSlider({
   slideMargin: 10,
   ticker: true,
   speed: 15000
-});</script>
+});
 
+//scrolly jQuery
+$('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+        || location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           if (target.length) {
+             $('html,body').animate({
+                 scrollTop: target.offset().top
+            }, 1000);
+            return false;
+        }
+    }
+});
+
+</script>
 
 </html>
