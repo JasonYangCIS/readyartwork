@@ -9,8 +9,6 @@
 	<script src="js/bxslider.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
 	<script src="js/jquery.bxslider.min.js"></script>
-	
-	<!-- responsive menu -->
 
 	<!-- begin script for colorbox -->	
 	<script src="js/jquery.colorbox.js"></script>
@@ -46,10 +44,12 @@
 	</script>
 	<!-- end script for colorbox -->
 	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">	
 	<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/maincss.css">
 	<link rel="stylesheet" href="css/colorbox.css" />
+	
 </head>
 	
 <body>
@@ -57,10 +57,23 @@
 		<div class="container">
 			<div class="row" id="home">
 				<div class="col-md-3 .col-md-pull-9">
-					<!-- quick cut and paste from photoshop for logo-->
 					<img class ="bird-logo" src="image/logo.png">
 				</div>				
-				<!-- begin nav work in progress for active color --> 
+				<!-- mobile nav --> 
+				<div id="mobilenav">
+					<hr/>
+				    <div class="parent">Menu <i class="fa fa-angle-down fa-lg"></i>
+				        <ul class="sub-nav">
+				            <li><a href="#home">HOME</a></li>
+				            <li><a href="#about">ABOUT</a></li>
+				            <li><a href="#products">PRODUCTS</a></li>
+				            <li><a href="#contact">CONTACT</a></li>
+				        </ul>
+				    </div>
+				    <hr/>
+				</div>
+				<!-- end mobile nav -->
+
 				<div class="col-md-9 .col-md-push-3">
 					<ul class="nav navbar-nav navbar-right navbar-header">
 		            	<li class="border paddingright"><a href="#home">HOME</a> </li>
@@ -200,6 +213,13 @@ $('a[href*=#]:not([href=#])').click(function() {
             return false;
         }
     }
+});
+
+//dropdown for mobile
+$(document).ready(function() {
+	$('.parent').click(function() {
+		$('.sub-nav').toggleClass('visible');
+	});
 });
 
 </script>

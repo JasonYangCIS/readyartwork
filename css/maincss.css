@@ -10,7 +10,16 @@ a{
 	color: #339999;
 	font-weight: 700;
  	font-family: 'Pt sans', sans-serif;
+}
 
+hr
+{
+  width:100%;
+  color: #333333;
+  size: 2px;
+} 
+ul{
+ 	list-style:none;
 }
 
 .bird-logo{
@@ -222,16 +231,17 @@ ul.dropdown-menu a:hover {
     max-width:320px;
 }
 
-hr.vertical
-{
-   display:inline;
-  height:100%;
-  width:1px;
-  border:1px;
-} 
+.parent{
+	font-size: 2em;
+	color: #999999;
+	font-weight: 700;
+}
 
 @media screen and (min-width:769px){
 	.googlemapshack{
+		display: none;
+	}
+	#mobilenav{
 		display: none;
 	}
 }
@@ -305,6 +315,22 @@ hr.vertical
 	.paddingtop{
 		padding-top: 0em;
 	}
+	#mobilenav ul.sub-nav {
+    display: none;
+	}
+
+	#mobilenav ul.visible {
+	    display: block;
+	}
+	.parent{
+		text-align: center;
+	}
+	.sub-nav{
+		padding-right: 2.6em;
+	}
+	.birdlogo {
+		/*align logo*/
+	}
 }
 
 @media screen and (max-width: 480px) {
@@ -351,5 +377,36 @@ hr.vertical
 	}
 	.birdimg{
 		max-width: 200px;
+	}
+
+	#mobilenav ul.sub-nav {
+    display: none;
+	}
+
+	#mobilenav ul.visible {
+	    display: block;
+	}
+	.parent{
+		text-align: center;
+	}
+	.sub-nav{
+		padding-right: 2.1em;
+	}
+}
+
+
+@media screen and (max-width: 320px) {
+	.birdimg{
+		max-width: 160px;
+	}
+	#mobilenav ul.sub-nav {
+    display: none;
+	}
+
+	#mobilenav ul.visible {
+	    display: block;
+	}
+	.parent{
+		text-align: center;
 	}
 }
