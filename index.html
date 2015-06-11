@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Birds INC.</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<!-- Latest compiled and minified JavaScript -->	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>	
+	<script src="js/bxslider.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/jquery.bxslider.min.js"></script>
+
+	<!-- begin script for colorbox -->	
+	<script src="js/jquery.colorbox.js"></script>
+	<script>
+		$(document).ready(function(){
+			//Examples of how to assign the Colorbox event to elements
+			$(".group1").colorbox({rel:'group1'});
+			$(".group2").colorbox({rel:'group2', transition:"fade"});
+			$(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
+			$(".group4").colorbox({rel:'group4', slideshow:true});
+			$(".ajax").colorbox();
+			$(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
+			$(".vimeo").colorbox({iframe:true, innerWidth:500, innerHeight:409});
+			$(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
+			$(".inline").colorbox({inline:true, width:"50%"});
+			$(".callbacks").colorbox({
+				onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+				onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+				onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+				onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+				onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+			});
+
+			$('.non-retina').colorbox({rel:'group5', transition:'none'})
+			$('.retina').colorbox({rel:'group5', transition:'none', retinaImage:true, retinaUrl:true});
+			
+			//Example of preserving a JavaScript event for inline calls.
+			$("#click").click(function(){ 
+				$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+				return false;
+			});
+		});
+	</script>
+	<!-- end script for colorbox -->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">	
+	<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/maincss.css">
+	<link rel="stylesheet" href="css/colorbox.css" />
+</head>
+	
+<body>
+	<div class="container-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 .col-md-pull-9">
+					<!-- quick cut and paste from photoshop for logo-->
+					<img class ="bird-logo" src="image/logo.png">
+				</div>				
+				<!-- begin nav work in progress for active color --> 
+				<div class="col-md-9 .col-md-push-3">
+					<ul class="nav navbar-nav navbar-right">
+		            	<li class="border paddingright"><a href="#">HOME</a></li>
+		              	<li class="border paddingright paddingleft"><a href="#">ABOUT</a></li>
+		              	<li class="dropdown border paddingright paddingleft">
+			                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">PRODUCTS</a>
+			                <ul class="dropdown-menu" role="menu">
+				                  <li class="listborder"><a href="#">bird feeders &amp; houses</a></li>
+				                  <li class="listborder"><a href="#">bird watching equipment</a></li>
+				                  <li class="listborder"><a href="#">books</a></li>
+				                  <li class="listborder"><a href="#">cleaning tools</a></li>
+				                  <li class="listborder"><a href="#">bird cages</a></li>
+				                  <li class="listborder"><a href="#">bird toys</a></li>
+				                  <li class="listborder"><a href="#">training materials</a></li>
+				                  <li class="listborder"><a href="#">bird costumes</a></li>
+			                </ul>
+		              	</li>
+		              	<li class="paddingleft"><a href="#">CONTACT</a></li>
+		            </ul>
+				</div>
+				<!-- end nav -->
+			</div>			
+		</div>		
+	</div>
+	<!-- begin slider -->
+	<ul class="bxslider">
+		<li class="borderbxslider"><strong>CANADIAN GEESE MIGRATION</strong> 9/15/15</li>
+		<li class="borderbxslider"><strong>NATIONAL BIRD DAY</strong> 1/05/16</li>
+		<li class="borderbxslider"><strong>HITCHCOCKS</strong> 6/14/16</li>
+		<li class="borderbxslider"><strong>MORE BIRDS</strong> 6/11/17</li>
+	</ul>
+	<!-- end slider -->
+
+		<br>
+	<div class="container-full">
+		<div class="row">
+			<div class="col-md-6">				
+				<div class='embed-container'>
+					<iframe src='https://www.youtube.com/embed/qs5nShDSkeU' frameborder='0' allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="item-description">
+					<h1>watch a chick hatch</h1>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-4 col-md-offset-1">
+			<img class="left-padding" src="image/birdwatch.png">
+			<div class="pic-description">
+				<h1>bird watching tips</h1>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+			</div>
+
+		</div>
+
+		<div class="col-md-4 col-md-offset-1">
+			<img src="image/fascinatingfacts.png">
+			<div class="pic-description">
+				<h1>fascinating facts</h1>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="line"></div>
+
+	<div class="bird-container">
+		<h1 class="bird-header">BIRDS OF THE MONTH</h1>
+		<div class="row">
+			<div class="col-md-3 paddingtop"><p><a class="group2" href="image/bird1.png"><img src="image/bird1.png"></a></p></div>
+			<div class="col-md-3 paddingtop"><p><a class="group2" href="image/bird2.png"><img src="image/bird2.png"></a></p></div>
+			<div class="col-md-3 paddingtop"><p><a class="group2" href="image/bird3.png"><img src="image/bird3.png"></a></p></div>
+			<div class="col-md-3 paddingtop"><p><a class="group2" href="image/bird4.png"><img src="image/bird4.png"></a></p></div>
+			<div class="col-md-3 paddingtop"><p><a class="group2" href="image/bird5.png"><img src="image/bird5.png"></a></p></div>
+			<div class="col-md-3 paddingtop"><p><a class="group2" href="image/bird1.png"><img src="image/bird1.png"></a></p></div>
+			<div class="col-md-3 paddingtop"><p><a class="group2" href="image/bird2.png"><img src="image/bird2.png"></a></p></div>
+			<div class="col-md-3 paddingtop"><p><a class="group2" href="image/bird1.png"><img src="image/bird1.png"></a></p></div>
+			<div class="col-md-3 paddingtop"><p><a class="group2" href="image/bird4.png"><img src="image/bird4.png"></a></p></div>
+			<div class="col-md-3 paddingtop"><p><a class="group2" href="image/bird3.png"><img src="image/bird3.png"></a></p></div>	
+			<div class="col-md-3 paddingtop"><p><a class="group2" href="image/bird2.png"><img src="image/bird2.png"></a></p></div>	
+			<div class="col-md-3 paddingtop"><p><a class="group2" href="image/bird1.png"><img src="image/bird1.png"></a></p></div>	
+		</div>
+	</div>
+
+	<!-- footer -->
+	<div class="bird-footer">
+		<div class="row row-left">
+			<div class="col-md-6">										
+				<ul class="nav navbar-nav navbar-custom">
+	            	<li class="footerborder paddingleft paddingright"><a href="#">HOME</a></li>
+	              	<li class="footerborder paddingleft paddingright"><a href="#">ABOUT</a></li>
+	              	<li class="footerborder paddingleft paddingright"><a href="#">PRODUCTS</a></li>
+	              	<li><a href="#">CONTACT</a></li>
+	            </ul>
+
+				<img class ="bird-logo-footer" src="image/logo.png">
+
+				<p class="copyright">
+					Copyright &reg; Birds Inc. All Rights Reserved. Website by <a href="www.jasonyangdev.com">Jason Yang</a>
+				</p>
+			</div>
+			<div class="col-md-6">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.9311965879183!2d-118.10856100000004!3d34.09690300000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2dad46e4d48a1%3A0x4a75133cd91167e6!2sReady+Artwork!5e0!3m2!1sen!2sus!4v1433996409775" width="550" height="280" frameborder="0" style="border:0"></iframe>
+			</div>
+		</div>
+	</div>
+
+	<!-- end footer -->
+	
+</body>
+<script>
+// jquery widget for slider
+$('.bxslider').bxSlider({
+  minSlides: 4,
+  maxSlides: 4,
+  slideWidth: 800,
+  slideMargin: 10,
+  ticker: true,
+  speed: 15000
+});</script>
+
+
+</html>

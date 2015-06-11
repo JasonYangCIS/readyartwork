@@ -1,0 +1,221 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+* {
+ font-size: 100%;
+ font-family: 'Pt sans', sans-serif;
+}
+
+a{
+	color: #339999;
+	font-weight: 700;
+ 	font-family: 'Pt sans', sans-serif;
+
+}
+
+.bird-logo{
+	padding-top: 4.5em;
+}
+
+.bird-logo-footer{
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
+
+.nav{
+	font-size: 1.8em;
+	padding-top: 5em;
+}
+
+ul.nav a:hover {
+	background-color: white;
+	color: #CCCCCC;
+}
+
+
+.dropdown-menu{	
+	font-style: italic;	
+	font-size: .7em;
+}
+.listborder{
+	outline: solid;
+	outline-width: 1px;
+	padding-top: .5em;
+}
+.listborder:hover{	
+	background:#339999;
+}
+
+
+ul.dropdown-menu a:hover {
+	background-color: #339999 !important; 
+	color: white !important; 
+}
+
+/*line breaks for nav bar*/
+.border{
+	border-right-style: solid;
+	border-color: #339999;
+	border-width: 1px;
+}
+
+.borderbxslider{
+	border-right-style: solid;
+	border-color: #666666;
+	border-width: 1px;
+	color: #666666;
+	padding-top: 1.2em;
+	padding-bottom: 1.2em;
+}
+
+.bxslider{
+	height: 100%;
+	font-size: 1.5em;
+	background-color: #99CCCC;
+	font-color: #fff;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-color: #666666;
+	border-width: 2px;
+}
+.container-fluid{
+	margin: 0 auto;
+  	width: 100%;
+  	padding-bottom: 4em;
+}
+
+.container-full {
+  margin: 0 auto;
+  width: 100%;
+  background-color: #CCCCCC;
+}
+
+.embed-container { 
+	position: relative; 
+	padding-bottom: 56.25%; 
+	height: 0; 
+	overflow: hidden; 
+	max-width: 100%; 
+}
+.embed-container iframe, .embed-container object, .embed-container embed { 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 90%; 
+	height: 90%; 
+	padding-left: 5em;
+	padding-top: 2em;
+}
+.item-description{
+	color: #666666;
+	width: 60%;
+}
+.item-description h1{
+	font-weight: 600;
+}
+
+.item-description p{	
+	font-style: italic;	
+	font-size: 1.5em;
+	font-weight: 100;
+	font-style: thin;
+}
+
+.pic-description{
+	color: #666666;
+}
+.pic-description h1{
+	font-weight: 600;
+}
+
+.pic-description p{	
+	font-style: italic;	
+	font-size: 1.5em;
+	font-weight: 100;
+}
+.col-md-4{
+	padding-top: 3.7em;\
+}
+/*.left-padding{	
+	padding-left: 9em;
+}*/
+
+.line{
+	  border-bottom: 2px solid #999999; 
+
+}
+.bird-container{
+	padding-left: 10em;
+	padding-bottom: 5em;
+}
+.bird-header{
+	color: #339999;
+	font-size: 2.4em;
+	font-weight: 600;
+}
+
+.paddingtop{
+	padding-top: 3em;
+}
+.paddingleft{
+	padding-left: 25px;
+} 
+.paddingright{
+	padding-right: 25px;
+}
+
+.bird-footer{
+	background-color: #CCCCCC;
+	padding-left: 15em;
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
+
+.navbar-custom{
+	background-color: #CCCCCC !important;
+	color: #666666;
+	padding: 0;
+	margin: 0;
+}
+.navbar-custom a{
+	color: #666666;
+}
+.navbar-custom a:hover{
+	color: #339999 !important;
+	background-color: #CCCCCC !important;
+}
+
+.footerborder{
+	border-right-style: solid;
+	border-color: #999999;
+	border-width: 1px;
+}
+
+
+.copyright{
+	font-size: 1.4em;
+	font-weight: 100;
+}
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+.col-fixed {
+    /* custom width */
+    width:320px;
+}
+.col-min {
+    /* custom min width */
+    min-width:320px;
+}
+.col-max {
+    /* custom max width */
+    max-width:320px;
+}
+
